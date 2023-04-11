@@ -15,5 +15,7 @@
 
 Go to site and install version of visual studio for your operating system
 
+For mac, it should look like this after installing and launching
 
+![Image](VSCode)
 
