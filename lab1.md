@@ -47,6 +47,6 @@ Type in yes and proceed to enter your password.
 You've successfully remotely connected to another computer.
 You can try using basic commands like cd, pwd, ls, mkdir and experimenting or looking around the directory and the files
 
-
+![Image2](testcommands.png)
 
 You can cmd+d or typing "exit" when you're done to log out of the secure shell
