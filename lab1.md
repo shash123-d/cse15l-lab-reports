@@ -33,3 +33,16 @@ In order to remotely connect to your account, we use ssh standing for secure she
 Type in "ssh --account-name--"
 In our case, it would look something like "ssh csxxxxx@ieng6.ucsd.edu"
 
+If you are logging in for the first time, you will see a message saying "the authenticity of host xxxx cannot be estabilished.....
+are you sure you want to continue connecting(yes/no/fingerprint)?"
+Type in yes and proceed to enter your password.
+
+![Image1](secureshellcommand.png)
+
+
+---
+
+> **Trying some commands**
+
+
+
