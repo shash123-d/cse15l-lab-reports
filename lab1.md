@@ -10,6 +10,7 @@
 
 > Installing VScode
 
-[https://code.visualstudio.com/]
+[Install Visual Studio Code](https://code.visualstudio.com/)
+
 Go to site and install version of visual studio for your operating system
 
