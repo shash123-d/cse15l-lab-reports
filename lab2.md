@@ -55,7 +55,8 @@ public void testReversedWithZeroArray() {
 }
 ```
 **Symptom(result of JUnit tests)**
-![Image](JUnittest.png)
+![Image](JUnittest1.png)
+![Image](JUnittest2.png)
 
 **Bug(before-and-after)**
 Before: 
