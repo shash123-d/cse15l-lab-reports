@@ -28,7 +28,57 @@ When the /add-message request is sent, the text variable is updated and sent bac
 
 > **Bugs**
 
+**Buggy Code**
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+**Failure-Inducing input in the form of JUnit test**
+```
+  @Test
+  public void testReversedWithNonEmptyArray() {
+    int[] input = {1,2,3,4};
+    assertArrayEquals(new int[]{4,3,2,1}, ArrayExamples.reversed(input));
+  }
+```
+**Input that doesn't induce a failure**
+```
+@Test
+public void testReversedWithZeroArray() {
+  int[] input = {0, 0, 0};
+  assertArrayEquals(new int[]{0, 0, 0}, ArrayExamples.reversed(input));
+}
+```
+**Symptom(result of JUnit tests)**
+![Image](JUnittest.png)
 
+**Bug(before-and-after)**
+Before: 
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      arr[i] = newArray[arr.length - i - 1];
+    }
+    return arr;
+  }
+```
+After:
+```
+  static int[] reversed(int[] arr) {
+    int[] newArray = new int[arr.length];
+    for(int i = 0; i < arr.length; i += 1) {
+      newArray[i] = arr[arr.length - i - 1];
+    }
+    return newArray;
+  }
+```
+This fix assigns the reversed values of the array passed as the argument to the new array created instead of doing the opposite like it was before
 
 ---
 
