@@ -29,10 +29,9 @@ TA Response:
 
 Student answer:
 
-End:
-The file & directory structure needed
+File & Directory structure: list-examples-grader/grade.sh
 The contents of each file before fixing the bug
-The full command line (or lines) you ran to trigger the bug
+Commands: bash grade.sh https://github.com/ucsd-cse15l-s23/list-methods-corrected
 A description of what to edit to fix the bug
 
 
@@ -42,3 +41,5 @@ A description of what to edit to fix the bug
 
 ---
 
+In the second half of the quarter, I really enjoyed learning getting more practice with bash and making an autograder script.
+It helped me understand what happens behind the scenes of autograder a little more which I really appreciated.
